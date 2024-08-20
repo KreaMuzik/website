@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact | CaseTek</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | CaseTek</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-        <ul>   
-            <li>
-                <a class="navbar-text" href="index.html">home</a>
-                <a class="navbar-text" href="blog.html">blog</a>
-                <a class="navbar-text" href="projects.html">projects</a>
-                <a class="navbar-text" href="contact.html">contact</a>
-            </li>
-        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <a class="navbar-link" href="index.html">Home</a>
+                    <a class="navbar-link" href="blog.html">Blog</a>
+                    <a class="navbar-link" href="projects.html">Projects</a>
+                    <a class="navbar-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <form>
+            <label for="name"><h3>name</h3></label>
+            <input type="text" id="name" name="name" placeholder="Your name...">
+
+            <label for="email"><h3>email</h3></label>
+            <input type="email" id="email" name="email" placeholder="Your email...">
+
+            <label for="reason"><h3>reason</h3></label>
+            <select name="reason" id="reason">
+                <option value="reason">Hire Me</option>
+                <option value="reason">Feedback</option>
+                <option value="reason">Discussion</option>
+            </select>
+
+            <label for="message"><h3>message</h3></label>
+            <textarea name="message" id="message" placeholder="Message..." style="height: 200px;"></textarea>
+            <button>Submit</button>
+        </form>
+    </main>
     <footer>
         <a class="social-link" href="https://github.com/kreamuzik" target="_blank"><img class="social-logo" src="./imgs/github-mark-white.svg" alt="Link to Robert's GitHub Profile."></a>
         <a class="social-link" href="https://linkedin.com/robert-lee-case" target="_blank"><img class="social-logo" src="./imgs/LI-In-Bug.png" alt="Link to Robert's LinkedIn Profile."></a>
@@ -27,4 +50,5 @@
             © 2024 All rights reserved
         </p>
     </footer>
+</body>
 </html>
