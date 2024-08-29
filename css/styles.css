@@ -1,0 +1,268 @@
+/***************************************************
+
+CaseTek Custom Style
+Copyright (c) 2024 KreaMuzik
+GPL license (http://www.gnu.org/licenses/gpl.html)
+
+***************************************************/
+
+
+/******* GENERAL *******/
+:root {
+    --bg-primary: #1f1f2b;
+    --bg-secondary: #282a39;
+    --primary: #305F72;
+    --primary-accent: #568EA6;
+    --secondary: #F18C8E;
+    --secondary-accent: #F0B7A4; 
+    --accent: #F1D1B5;
+    --accent-2: #fad66a;
+    --side-bar: #fad66a25;
+
+    --header-font: 1.50rem "Dosis", sans-serif;
+    --body-font: 1.25rem "Dosis", sans-serif;
+    --footer-font: 1.25rem "Dosis", sans-serif;
+
+    --header-line-height: 1.50rem;
+    --body-line-height: 1.4rem;
+    --footer-line-height: 1.25rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: var(--bg-primary);
+    overflow-x: hidden;
+}
+
+body {
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    line-height: var(--body-line-height);
+}
+
+ul, li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--secondary);
+    padding: 1rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body > header {
+    position: sticky;
+    bottom: 100vh;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+/****** HEADER *******/
+header {
+    background-color: var(--bg-secondary);
+    color: var(--accent);
+    font: var(--header-font);
+    line-height: var(--header-line-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo-container {
+    align-items: center;
+    justify-content: start;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 1 rem;
+    text-transform: uppercase;
+}
+
+
+/****** NAV *******/
+nav {
+    background-color: var(--bg-secondary);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 5rem;
+}
+
+nav a {
+    height: 100%;
+    padding: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--primary-accent);
+    text-transform: uppercase;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20rem;
+    z-index: 999;
+    background: var(--side-bar);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-button {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+/******* MAIN CONTENT *******/
+main {
+    background-color: var(--primary-color);
+    color: var(--primary-accent);
+    font: var(--body-font);
+    line-height: var(--body-line-height);
+    border: 2px solid blue;
+    display: flex;
+}
+
+
+/******* FOOTER *******/
+footer {
+    background-color: var(--bg-secondary);
+    color: var(--accent);
+    font: var(--footer-font);
+    line-height: var(--footer-line-height);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    
+}
+
+.social-link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.social-logo {
+    max-height: 2rem;
+    transition: 0.5s;
+    padding: 1rem;
+}
+
+.social-logo:hover {
+    max-height: 2.5rem;
+    transition: 0.5s;
+}
+
+.link-text {
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.link-text:hover {
+    transition: 0.5s;
+    font-size: 1.75rem;
+}
+
+
+/******* MEDIA QUERIES FOR RESPONSIVENESS *******/
+
+/* XXL */
+@media (max-width: 1536px) {
+    .container {
+      max-width: 1280px;
+    }
+}
+
+/* XL */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+/* LG */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/* MD */
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+
+
+}
+
+/* SM */
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+/* XS */
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}
