@@ -1,3 +1,4 @@
-# Portfolio
-
-This is my website portfolio.
+# Website
+* About me
+* Blog for sharing my knowledge
+* Projects completed and active
