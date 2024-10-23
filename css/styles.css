@@ -73,9 +73,9 @@ section {
         font-size: small;
     }
 
-    body {
+    /* body {
         border: dashed 2px red;
-    }
+    } */
 
     .container {
         max-width: 475px;
@@ -84,9 +84,9 @@ section {
 
 /* sm */
 @media (min-width: 640px) {
-    body{
+    /* body{
         border: dashed 2px purple;
-    }
+    } */
 
     .container {
         max-width: 640px;
@@ -95,9 +95,9 @@ section {
 
 /* md */
 @media (min-width: 768px) {
-    body {
+    /* body {
         border: dashed 2px blue;
-    }
+    } */
     
     .container {
         max-width: 768px;
@@ -110,9 +110,9 @@ section {
         font-size: small;
     }
 
-    body {
+    /* body {
         border: dashed 2px orange;
-    }
+    } */
 
     .container {
         max-width: 1024px;
@@ -125,9 +125,9 @@ section {
         font-size: medium;
     }
     
-    body {
+    /* body {
         border: dashed 2px yellow;
-    }
+    } */
 
     .container {
         max-width: 1280px;
@@ -140,9 +140,9 @@ section {
         font-size: large;
     }
 
-    body {
+    /* body {
         border: dashed 2px green;
-    }
+    } */
 
     .container {
         max-width: 1536px;
