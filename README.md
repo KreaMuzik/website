@@ -1,4 +1,2 @@
 # Website
-* About me
-* Blog for sharing my knowledge
-* Projects completed and active
+My web portfolio
