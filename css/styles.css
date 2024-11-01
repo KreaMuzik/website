@@ -7,10 +7,10 @@ html {
 }
 
 body {
-    background-image: url('../assests/background.jpg');
+    background-image: url('../assests/bg.svg');
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 section {
@@ -22,28 +22,50 @@ section {
     z-index: 1;
 }
 
+.metal-mania-regular {
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .content-container {
+    color: white;
     padding-top: 5%;
-    max-height: 50%;
-    height: 50%;
+    height: 100%;
+    width: 100%;
+    max-height: 30%;
 }
 
-.record-cover, .record {
+.record-cover, .record, .record-cover-back {
     position: fixed;
-    bottom: 0;
+    top: 5vh;
+    width: 90%;
+    height: 90%;
     max-width: 100%;
     max-height: 100%;
     z-index: -1;
-}
-
-.record-cover {
-    transform: translateX(-40%);
 }
 
 .scroll {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     height: 100vh;
+    z-index: 2;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #201e1f;
+    background-color: #cdbca8;
+    border: solid #cdbca8;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+}
+
+.social-icon {
+    color: #cdbca8;
 }
 
 .profile-pic {
@@ -52,99 +74,108 @@ section {
     border-radius: 50%;
 }
 
+.bg-banner {
+    background-color: #201e1f40;
+}
+
+
+/*** RESPONSIVE MEDIA QUERIES ***/
 
 /* LANDSCAPE */
 @media (orientation: landscape) {
     .content-container {
         margin-left: 50%;
         width: auto;
+        height: 100%;
         max-width: 50%;
-    }
-
-    .record-cover, .record {
-        left: 0;
+        max-height: 100%;
     }
 }
 
-
-/* xs */
+/* XS */
 @media (min-width: 475px) {
     html {
         font-size: small;
     }
 
-    /* body {
-        border: dashed 2px red;
-    } */
-
     .container {
         max-width: 475px;
     }
+
+    .content-container {
+        margin-left: 50%;
+        max-width: 50%;
+        max-height: 100%;
+    }
+
+    /* body {
+        border: dashed 2px red;
+    } */
 }
 
-/* sm */
+/* SM */
 @media (min-width: 640px) {
-    /* body{
-        border: dashed 2px purple;
-    } */
-
     .container {
         max-width: 640px;
     }
+
+    /* body{
+        border: dashed 2px purple;
+    } */
 }
 
-/* md */
-@media (min-width: 768px) {
-    /* body {
-        border: dashed 2px blue;
-    } */
-    
+/* MD */
+@media (min-width: 768px) {    
     .container {
         max-width: 768px;
     }
+
+    /* body {
+        border: dashed 2px blue;
+    } */
 }
 
-/* lg */
+/* LG */
 @media (min-width: 1024px) {
     html {
         font-size: small;
     }
 
-    /* body {
-        border: dashed 2px orange;
-    } */
-
     .container {
         max-width: 1024px;
     }
+
+    /* body {
+        border: dashed 2px orange;
+    } */
 }
 
-/* xl */
+/* XL */
 @media (min-width: 1280px) {
     html {
         font-size: medium;
     }
-    
-    /* body {
-        border: dashed 2px yellow;
-    } */
 
     .container {
         max-width: 1280px;
     }
+
+    /* body {
+        border: dashed 2px yellow;
+    } */
 }
 
-/* 2xl */
+/* XXL */
 @media (min-width: 1536px) {
     html {
         font-size: large;
     }
 
-    /* body {
-        border: dashed 2px green;
-    } */
-
     .container {
         max-width: 1536px;
     }
+
+    /* body {
+        border: dashed 2px green;
+    } */
 }
